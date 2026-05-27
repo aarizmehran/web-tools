@@ -2,21 +2,33 @@
 # Dependencies
 node_modules/
 
-# Build artifacts
+# Build outputs
 dist/
 build/
-*.o
-*.obj
-*.pyc
-__pycache__/
-*.log
+target/
 
-# Environment
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
 .env
 .env.local
 .env.*
 
-# Editors
+# Logs
+*.log
+
+# Coverage
+coverage/
+htmlcov/
+.coverage
+
+# IDE
 .vscode/
 .idea/
 *.swp
@@ -27,21 +39,19 @@ __pycache__/
 .DS_Store
 Thumbs.db
 
-# Coverage
-coverage/
-htmlcov/
-.coverage
+# Testing
+.mypy_cache/
+.pytest_cache/
 
-# Package lock
-package-lock.json
-.yarn/
-*.tgz
-*.gz
+# Compression
 *.zip
-*.rar
-*.7z
+*.gz
+*.tar
+*.tgz
 *.bz2
 *.xz
+*.7z
+*.rar
 *.zst
 *.lz4
 *.lzh
@@ -56,5 +66,4 @@ package-lock.json
 *.tar.bz2
 *.tar.xz
 *.tar.zst
-
 ```
